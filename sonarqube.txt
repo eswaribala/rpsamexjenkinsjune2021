@@ -1,0 +1,9 @@
+sonar.projectKey=uploaddocker
+sonar.projectName=C:/Users/Balasubramaniam/.jenkins/workspace/day1fsdockerproject/uploaddocker
+sonar.projectVersion=1.0
+sonar.login=admin
+sonar.password=admin
+sonar.language=java
+sonar.sources=C:/Users/Balasubramaniam/.jenkins/workspace/$JOB_NAME
+sonar.java.binaries=C:/Users/Balasubramaniam/.jenkins/workspace/$JOB_NAME/uploaddocker/target/classes
+sonar.sourceEncoding=UTF-8
