@@ -1,0 +1,25 @@
+Problem
+
+Checkout only necessary projects fron github repo
+build the maven jar
+build docker image
+create container
+configure sonarqube
+configure email Notification
+
+Solution
+mvn -f ./uploaddocker clean install -DskipTests
+cd uploaddocker
+rem docker build -f ./dockerfile -t uploadapp:1.0 .
+docker-compose up
+
+
+sonar.projectKey=uploaddocker
+sonar.projectName=C:/Users/Balasubramaniam/.jenkins/workspace/day1fsdockerproject/uploaddocker
+sonar.projectVersion=1.0
+sonar.login=admin
+sonar.password=admin
+sonar.language=java
+sonar.sources=C:/Users/Balasubramaniam/.jenkins/workspace/$JOB_NAME
+sonar.java.binaries=C:/Users/Balasubramaniam/.jenkins/workspace/$JOB_NAME/uploaddocker/target/classes
+sonar.sourceEncoding=UTF-8
